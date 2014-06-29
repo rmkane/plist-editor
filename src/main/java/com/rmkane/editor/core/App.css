@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+/**
+ *  ----------------------------------------------------------------------------
+ *  Menu Style 
+ *  ----------------------------------------------------------------------------
+ */
+.menu-bar,.menu,.menu-item {
+	-fx-font: 12px Tahoma;
+}
+
+.menu-bar {
+	-fx-background-color: gold;
+	-fx-border-color: goldenrod;
+	-fx-border-width: 2
+}
+
+.menu {
+	-fx-background-color: gold;
+	-fx-border-color: goldenrod;
+}
+
+.menu .label {
+	-fx-text-fill: saddlebrown
+}
+
+.menu-item {
+	
+}
+
+.menu-item .label {
+	-fx-text-fill: white;
+}
+
+.menu-item:focused {
+	-fx-background-color: lightgray;
+}
+
+.menu-item:focused .label {
+	-fx-text-fill: gold;
+}
+
+.context-menu {
+	-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+	-fx-background-color: silver;
+	-fx-background-insets: 0, 1, 2;
+	-fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+	-fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+
+/**
+ *  ----------------------------------------------------------------------------
+ *  TextArea Style 
+ *  ----------------------------------------------------------------------------
+ */
+.text-area .editor {
+	-fx-font-family: Consolas;
+	-fx-font-size: 12px;
+	-fx-highlight-fill: #00ff00;
+	-fx-highlight-text-fill: #000000;
+	-fx-text-fill: #00ff00;
+	-fx-background-color: #000000;
+}
